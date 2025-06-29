@@ -27,4 +27,4 @@ This project is licensed under the MIT License. See LICENSE.md for details.
 
 ## Contact
 
-If you have any questions or feedback, feel free to reach out to me at yuvrj.sisodia23@gmail.com or [[LinkedIn.](https://www.linkedin.com/in/yuvraj-singh-sisodia/)
+If you have any questions or feedback, feel free to reach out to me at yuvraj.sisodia23@gmail.com or [LinkedIn.](https://www.linkedin.com/in/yuvraj-singh-sisodia/)
