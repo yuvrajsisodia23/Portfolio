@@ -1,0 +1,87 @@
+:root {
+    --primary: #ffcd42;
+    --secondary: #ffd35c;
+    --text-primary: #ffffff;
+    --text-secondary: #d1d5db;
+    --bg-primary: #000000;
+    --bg-secondary: #000000;
+
+    --shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    transition: all 0.3s ease;
+}
+
+.card {
+    background-color: var(--bg-secondary);
+    transition: all 0.3s ease;
+}
+
+.gradient-text {
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: bold;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+@keyframes slideFadeIn {
+    0% { 
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% { 
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes subtlePop {
+    0% { transform: scale(0.95); opacity: 0; }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes fadeInSlideUp {
+    0% { transform: translateY(20px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+
+@keyframes textHighlight {
+    0% { background-size: 0% 100%; }
+    100% { background-size: 100% 100%; }
+}
+
+.highlight-animate {
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    background-position: left center;
+    transition: background-size 1s ease;
+    animation: textHighlight 1.5s ease-out forwards;
+}
+
+.floating {
+    animation: float 3s ease-in-out infinite;
+}
+
+.animate-pop {
+    animation: subtlePop 0.6s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
+}
+
+.animate-fade-up {
+    animation: fadeInSlideUp 0.8s ease-out forwards;
+}
