@@ -19,7 +19,7 @@ A personal portfolio website showcasing my skills, projects, and experiences in 
 
 ## Deployment
 
-This website is deployed on [[Portfolio]](https://yuvrajsisodia23.github.io/Portfolio/).
+This website is deployed on [Portfolio](https://yuvrajsisodia23.github.io/Portfolio/).
 
 ## License
 
