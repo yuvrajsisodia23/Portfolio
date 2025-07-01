@@ -8,7 +8,8 @@
     <title>Yuvraj Singh Sisodia's Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="./styles.css"> <!-- Link to external CSS in same directory -->
+    <link rel="stylesheet" href="css/styles.css"> <!-- Link to external CSS in same directory -->
+    <script src="js/script.js"></script> <!-- Link to external JS in same directory -->
 </head>
 <body>
     <!-- Navigation -->
@@ -16,7 +17,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16">
                 <div class="flex items-center">
-                    <a href="#home" target="_blank" rel="noopener noreferrer">
+                    <a href="#home" rel="noopener noreferrer">
                         <img src="Assets/signature-logo.png" alt="Home" class="h-20 w-auto"/>
                     </a>
                 </div>
@@ -26,7 +27,7 @@
                     -->
                     <a href="#skills" class="text-sm font-medium hover:text-yellow-400 transition relative group">Skills<span class="absolute bottom-0 left-0 w-0 h-0.5 bg-yellow-400 transition-all duration-300 group-hover:w-full"></span></a>
                     <a href="#projects" class="text-sm font-medium hover:text-yellow-400 transition relative group">Projects<span class="absolute bottom-0 left-0 w-0 h-0.5 bg-yellow-400 transition-all duration-300 group-hover:w-full"></span></a>
-                    <a href="#events" class="text-sm font-medium hover:text-yellow-400 transition relative group">Events<span class="absolute bottom-0 left-0 w-0 h-0.5 bg-yellow-400 transition-all duration-300 group-hover:w-full"></span></a>
+                    <a href="events.html" class="text-sm font-medium hover:text-yellow-400 transition relative group">Events<span class="absolute bottom-0 left-0 w-0 h-0.5 bg-yellow-400 transition-all duration-300 group-hover:w-full"></span></a>
                     <a href="#blog" class="text-sm font-medium hover:text-yellow-400 transition relative group">Blog<span class="absolute bottom-0 left-0 w-0 h-0.5 bg-yellow-400 transition-all duration-300 group-hover:w-full"></span></a>
                     <a href="#contact" class="text-sm font-medium hover:text-yellow-400 transition relative group">Contact<span class="absolute bottom-0 left-0 w-0 h-0.5 bg-yellow-400 transition-all duration-300 group-hover:w-full"></span></a>
                 </div>
@@ -45,7 +46,7 @@
                 -->
                 <a href="#skills" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-100/10 dark:hover:bg-zinc-700">Skills</a>
                 <a href="#projects" class="block px-3 py-2 rounded-md text-base font-medium hhover:bg-gray-100/10 dark:hover:bg-zinc-700">Projects</a>
-                <a href="#events" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-100/10 dark:hover:bg-zinc-700">Events</a>
+                <a href="events.html" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-100/10 dark:hover:bg-zinc-700">Events</a>
                 <a href="#blog" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-100/10 dark:hover:bg-zinc-700">Blog</a>
                 <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-100/10 dark:hover:bg-zinc-700">Contact</a>
             </div>
@@ -204,85 +205,6 @@
         </div>
     </section>
 
-    <!-- Events Section -->
-    <section id="events" class="py-20 px-4 sm:px-6 lg:px-8 ">
-        <div class="max-w-7xl mx-auto">
-            <h2 class="text-3xl md:text-4xl font-bold mb-16 text-center">Events I've <span class="gradient-text">Curated</span></h2>
-            <div class="grid md:grid-cols-2 gap-8" style="animation-delay: 0.3s">
-                <!-- Event 1 -->
-                <div class="bg-zinc-900 card rounded-xl overflow-hidden flex flex-col md:flex-row hover:shadow-lg transition -all duration-300 transform hover:-translate-y-1 hover:scale-[1.02] hover:shadow-yellow-400/20">
-                    <div class="md:w-1/3">
-                        <img src="Assets\Yuvi-graphic.jpg" alt="Graphic" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.03]">
-                    </div>
-                    <div class="md:w-2/3 p-6">
-                        <h3 class="font-bold text-xl text-yellow-400 mb-2">Cooking.....</h3>
-                        <!--
-                        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">October 2023</p>
-                        <p class="text-gray-600 dark:text-gray-300 mb-4">Organized a 6-week workshop series introducing students to Python, machine learning, and data visualization fundamentals.</p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="px-2 py-1 bg-blue-100 bg-zinc-700 rounded-full text-xs">Workshop</span>
-                            <span class="px-2 py-1 bg-blue-100 bg-zinc-700 rounded-full text-xs">Education</span>
-                            <span class="px-2 py-1 bg-blue-100 bg-zinc-700 rounded-full text-xs">250+ Attendees</span>
-                        </div>
-                        <a href="*" class="text-blue-400 font-medium inline-flex items-center">Know More <i class="fas fa-arrow-right ml-2"></i></a>
-                        -->
-                    </div>
-                </div>
-                <!-- Event 2 -->
-                <div class="bg-zinc-900 card rounded-xl overflow-hidden flex flex-col md:flex-row hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 hover:scale-[1.02] hover:shadow-yellow-400/20">
-                    <div class="md:w-1/3">
-                        <img src="https://media.licdn.com/dms/image/v2/D4D22AQEraZdYJGlVrQ/feedshare-shrink_2048_1536/B4DZWP8KF6HkAo-/0/1741876682217?e=1753920000&v=beta&t=et5DXG8NjIYYpQtMG2Cz3qExWboyQdPfJDV36e10CXY" alt="People Sitting In a Auditorium" class="w-full h-full object-cover">
-                    </div>
-                    <div class="md:w-2/3 p-6">
-                        <h3 class="font-bold text-xl mb-2">TEDxIPSA Indore 2025</h3>
-                        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">March 2025</p>
-                        <p class="text-gray-600 dark:text-gray-300 mb-4">As Curation Head for TEDxIPSA Indore 2025, I led the speaker selection and ideation process, managed speaker communication, content review, and rehearsals"</p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="px-2 py-1 bg-blue-100 bg-zinc-700 rounded-full text-xs">Leadership</span>
-                            <span class="px-2 py-1 bg-blue-100 bg-zinc-700 rounded-full text-xs">Curation</span>
-                            <span class="px-2 py-1 bg-blue-100 bg-zinc-700 rounded-full text-xs">Managment</span>
-                        </div>
-                        <a href="https://www.linkedin.com/posts/yuvraj-singh-sisodia_wrapped-uptedxipsa-indore-andheadingthe-activity-7305960428365344768-xBm4?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEauVW8B1l9eU6gWB9UQMf9xD-cWIPE-RoY" class="text-blue-400 font-medium inline-flex items-center">Know More <i class="fas fa-arrow-right ml-2"></i></a>
-                    </div>
-                </div>
-                <!-- Event 3 -->
-                <div class="bg-zinc-900 card rounded-xl overflow-hidden flex flex-col md:flex-row hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 hover:scale-[1.02] hover:shadow-yellow-400/20">
-                    <div class="md:w-1/3">
-                        <img src="https://media.licdn.com/dms/image/v2/D4D22AQEzy63sNlz79A/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1709560076502?e=1753920000&v=beta&t=t5BXUVCiG_j6ygxPSfmhASwc36IiMrLqhScg_6dVyq4" alt="A group of people sitting together" class="w-full h-full object-cover">
-                    </div>
-                    <div class="md:w-2/3 p-6">
-                        <h3 class="font-bold text-xl mb-2">TEDxIPSA Indore 2024</h3>
-                        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">March 2024</p>
-                        <p class="text-gray-600 dark:text-gray-300 mb-4">Organized my college's first-ever TEDx event. Collaborated with multiple teams to ensure smooth execution, the TEDx event was a huge success and left our college community with unforgettable memories.</p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="px-2 py-1 bg-blue-100 bg-zinc-700 rounded-full text-xs">Curation</span>
-                            <span class="px-2 py-1 bg-blue-100 bg-zinc-700 rounded-full text-xs">Team Building</span>
-                            <span class="px-2 py-1 bg-blue-100 bg-zinc-700 rounded-full text-xs">Marketing</span>
-                        </div>
-                        <a href="https://www.linkedin.com/posts/yuvraj-singh-sisodia_tedx-tedxipsaindore-teamwork-activity-7170414765280903168-QwdP?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEauVW8B1l9eU6gWB9UQMf9xD-cWIPE-RoY" class="text-blue-400 font-medium inline-flex items-center">Know More <i class="fas fa-arrow-right ml-2"></i></a>
-                    </div>
-                </div>
-                <!-- Event 4 -->
-                <div class="bg-zinc-900 card rounded-xl overflow-hidden flex flex-col md:flex-row hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 hover:scale-[1.02] hover:shadow-yellow-400/20">
-                    <div class="md:w-1/3">
-                        <img src="https://media.licdn.com/dms/image/v2/D4D22AQF2fCh0f9biQA/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1721507355908?e=1753920000&v=beta&t=pBa-V6XFCOisyyBflyvGoXeawAm906E7pwlejGU3URA" alt="Hackathon participants working collaboratively" class="w-full h-full object-cover">
-                    </div>
-                    <div class="md:w-2/3 p-6">
-                        <h3 class="font-bold text-xl mb-2">< HACK संगम > Hackathon</h3>
-                        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">April 2024</p>
-                        <p class="text-gray-600 dark:text-gray-300 mb-4">Arranged an eight-hour hackathon at my college, providing a platform for participants to showcase their coding skills and problem-solving abilities.</p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="px-2 py-1 bg-blue-100 bg-zinc-700 rounded-full text-xs">Hackathon</span>
-                            <span class="px-2 py-1 bg-blue-100 bg-zinc-700 rounded-full text-xs">Collaboration</span>
-                            <span class="px-2 py-1 bg-blue-100 bg-zinc-700 rounded-full text-xs">100+ Attendees</span>
-                        </div>
-                        <a href="https://www.linkedin.com/posts/yuvraj-singh-sisodia_hackatuassasnatk-hackathon-activity-7171794201255239680-BRj1?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEauVW8B1l9eU6gWB9UQMf9xD-cWIPE-RoY" class="text-blue-400 font-medium inline-flex items-center">Know More <i class="fas fa-arrow-right ml-2"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Blog Section -->
     <section id="blog" class="py-20 px-4 sm:px-6 lg:px-8 ">
         <div class="max-w-7xl mx-auto">
@@ -422,7 +344,7 @@
                         <a href="#home" class="text-gray-500 hover:text-yellow-400 transition relative group">Home<span class="absolute bottom-0 left-0 w-0 h-px bg-yellow-400 transition-all duration-300 group-hover:w-full"></span></a>
                         <a href="#skills" class="text-gray-500 hover:text-yellow-400 transition relative group">Skills<span class="absolute bottom-0 left-0 w-0 h-px bg-yellow-400 transition-all duration-300 group-hover:w-full"></span></a>
                         <a href="#projects" class="text-gray-500 hover:text-yellow-400 transition relative group">Projects<span class="absolute bottom-0 left-0 w-0 h-px bg-yellow-400 transition-all duration-300 group-hover:w-full"></span></a>
-                        <a href="#events" class="text-gray-500 hover:text-yellow-400 transition relative group">Events<span class="absolute bottom-0 left-0 w-0 h-px bg-yellow-400 transition-all duration-300 group-hover:w-full"></span></a>
+                        <a href="events.html" class="text-gray-500 hover:text-yellow-400 transition relative group">Events<span class="absolute bottom-0 left-0 w-0 h-px bg-yellow-400 transition-all duration-300 group-hover:w-full"></span></a>
                         <a href="#blog" class="text-gray-500 hover:text-yellow-400 transition relative group">Blog<span class="absolute bottom-0 left-0 w-0 h-px bg-yellow-400 transition-all duration-300 group-hover:w-full"></span></a>
                         <a href="#contact" class="text-gray-500 hover:text-yellow-400 transition relative group">Contact<span class="absolute bottom-0 left-0 w-0 h-px bg-yellow-400 transition-all duration-300 group-hover:w-full"></span></a>
                     </div>
@@ -431,39 +353,5 @@
             </div>
         </div>
     </footer>
-
-    <script>
-        // Mobile menu toggle
-        const mobileMenuButton = document.getElementById('mobile-menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
-        
-        mobileMenuButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-        
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                
-                const targetId = this.getAttribute('href');
-                if (targetId === '#') return;
-                
-                const targetElement = document.querySelector(targetId);
-                if (targetElement) {
-                    const headerHeight = document.querySelector('nav').offsetHeight;
-                    const targetPosition = targetElement.offsetTop - headerHeight;
-                    
-                    window.scrollTo({
-                        top: targetPosition,
-                        behavior: 'smooth'
-                    });
-                    
-                    // Close mobile menu if open
-                    mobileMenu.classList.add('hidden');
-                }
-            });
-        });
-    </script>
 </body>
 </html>
