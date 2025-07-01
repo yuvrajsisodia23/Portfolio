@@ -147,20 +147,24 @@ body.fade-out {
     justify-content: flex-end;
 }
 
-@keyframes scrollSkills {
-0% { transform: translateX(0); }
-100% { transform: translateX(-50%); }
-}
-
-.animate-skill-scroll {
-animation: scrollSkills 20s linear infinite;
-}
-
-@media (max-width: 640px) {
-.animate-skill-scroll {
-    animation-duration: 10s;
-}
+.animate-scroll {
+animation: scrollX 20s linear infinite;
 }
 .animate-scroll:hover {
-  animation-play-state: paused;
+animation-play-state: paused;
+}
+@keyframes scrollX {
+0% {
+    transform: translateX(0);
+}
+100% {
+    transform: translateX(-50%);
+}
+}
+.scrollbar-hide::-webkit-scrollbar {
+display: none;
+}
+.scrollbar-hide {
+-ms-overflow-style: none;
+scrollbar-width: none;
 }
