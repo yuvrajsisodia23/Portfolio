@@ -76,50 +76,116 @@
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="py-20 px-4 sm:px-6 lg:px-8 ">
-        <div class="max-w-7xl mx-auto">
-            <h2 class="text-3xl md:text-4xl font-bold mb-16 text-center animate-fade-up" style="opacity: 0;">
-                My <span class="gradient-text">Skills</span> & Tools
-            </h2>
-            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 sm:gap-6">
-                <!-- Data Science Skills -->
-                <div class="card p-6 rounded-xl text-center hover:scale-[1.03] transition-all duration-300 hover:shadow-lg hover:shadow-yellow-400/10 hover:border hover:border-yellow-400/20">
-                    <div class="w-16 h-16 mx-auto mb-4 bg-blue-100 bg-zinc-900 rounded-full flex items-center justify-center text-yellow-500 dark:text-blue-400 transition-all duration-300">
-                        <i class="fas fa-brain text-3xl transition-transform group-hover:scale-110"></i>
+    <section id="skills" class="py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
+        <h2 class="text-3xl md:text-4xl font-bold mb-16 text-center animate-fade-up">
+        My <span class="gradient-text">Skills</span> & Tools
+        </h2>
+        
+        <div class="w-full whitespace-nowrap overflow-hidden relative">
+            <!-- Left Gradient Shadow -->
+            <div class="absolute left-0 top-0 h-full w-16 bg-gradient-to-r from-black via-black-950/70 to-transparent pointer-events-none z-10"></div>
+
+            <!-- Right Gradient Shadow -->
+            <div class="absolute right-0 top-0 h-full w-16 bg-gradient-to-l from-black via-black-950/70 to-transparent pointer-events-none z-10"></div>
+            
+            <div class="inline flex animate-scroll space-x-6 px-8">
+                <div class="flex space-x-6">
+                    <!-- Skill Card 1 -->
+                    <div class="card p-6 rounded-xl text-center hover:scale-[1.03] transition-all duration-300 hover:shadow-lg hover:shadow-yellow-400/10 hover:border hover:border-yellow-400/20">
+                        <div class="w-16 h-16 mx-auto mb-4 bg-zinc-900 rounded-full flex items-center justify-center text-yellow-500">
+                        <i class="fas fa-brain text-3xl"></i>
+                        </div>
+                        <h3 class="font-bold mb-2">Machine Learning</h3>
+                        <p class="text-sm text-gray-300">Scikit-learn, TensorFlow</p>
                     </div>
-                    <h3 class="font-bold mb-2">Machine Learning</h3>
-                    <p class="text-sm text-gray-600 dark:text-gray-300">Building predictive models with Scikit-learn, TensorFlow</p>
+
+                    <!-- Skill Card 2 -->
+                    <div class="card p-6 rounded-xl text-center hover:scale-[1.03] transition-all duration-300 hover:shadow-lg hover:shadow-yellow-400/10 hover:border hover:border-yellow-400/20">
+                        <div class="w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center text-purple-400">
+                        <i class="fas fa-chart-bar text-3xl"></i>
+                        </div>
+                        <h3 class="font-bold mb-2">Data Analysis</h3>
+                        <p class="text-sm text-gray-300">Pandas, NumPy, SQL</p>
+                    </div>
+
+                    <!-- Skill Card 3 -->
+                    <div class="card p-6 rounded-xl text-center hover:scale-[1.03] transition-all duration-300 hover:shadow-lg hover:shadow-yellow-400/10 hover:border hover:border-yellow-400/20">
+                        <div class="w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center text-green-400">
+                        <i class="fas fa-chart-pie text-3xl"></i>
+                        </div>
+                        <h3 class="font-bold mb-2">Visualization</h3>
+                        <p class="text-sm text-gray-300">Matplotlib, Power BI</p>
+                    </div>
+
+                    <!-- Skill Card 4 -->
+                    <div class="card p-6 rounded-xl text-center hover:scale-[1.03] transition-all duration-300 hover:shadow-lg hover:shadow-yellow-400/10 hover:border hover:border-yellow-400/20">
+                        <div class="w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center text-yellow-400">
+                        <i class="fas fa-users text-3xl"></i>
+                        </div>
+                        <h3 class="font-bold mb-2">Event Planning</h3>
+                        <p class="text-sm text-gray-300">Teamwork & Coordination</p>
+                    </div>
+
+                    <!-- Skill Card 5 -->
+                    <div class="card p-6 rounded-xl text-center hover:scale-[1.03] transition-all duration-300 hover:shadow-lg hover:shadow-yellow-400/10 hover:border hover:border-yellow-400/20">
+                        <div class="w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center text-red-400">
+                        <i class="fas fa-bullhorn text-3xl"></i>
+                        </div>
+                        <h3 class="font-bold mb-2">Public Speaking</h3>
+                        <p class="text-sm text-gray-300">Technical communication</p>
+                    </div>
                 </div>
-                <div class="card p-6 rounded-xl text-center hover:scale-[1.03] transition-all duration-300 hover:shadow-lg hover:shadow-yellow-400/10 hover:border hover:border-yellow-400/20">
-                    <div class="w-16 h-16 mx-auto mb-4 bg-purple-100 bg-zinc-900 rounded-full flex items-center justify-center text-purple-500 dark:text-purple-400">
-                        <i class="fas fa-chart-bar text-3xl transition-transform group-hover:scale-110"></i>
+
+                <!-- Clone to loop smoothly -->
+                <div class="flex space-x-6">
+                    <!-- Skill Card 6 -->
+                    <div class="card p-6 rounded-xl text-center hover:scale-[1.03] transition-all duration-300 hover:shadow-lg hover:shadow-yellow-400/10 hover:border hover:border-yellow-400/20">
+                        <div class="w-16 h-16 mx-auto mb-4 bg-zinc-900 rounded-full flex items-center justify-center text-yellow-500">
+                        <i class="fas fa-brain text-3xl"></i>
+                        </div>
+                        <h3 class="font-bold mb-2">Machine Learning</h3>
+                        <p class="text-sm text-gray-300">Scikit-learn, TensorFlow</p>
                     </div>
-                    <h3 class="font-bold mb-2">Data Analysis</h3>
-                    <p class="text-sm text-gray-600 dark:text-gray-300">Pandas, NumPy, SQL for data exploration</p>
-                </div>
-                <div class="card p-6 rounded-xl text-center hover:scale-[1.03] transition-all duration-300 hover:shadow-lg hover:shadow-yellow-400/10 hover:border hover:border-yellow-400/20">
-                    <div class="w-16 h-16 mx-auto mb-4 bg-green-100 bg-zinc-900 rounded-full flex items-center justify-center text-green-500 dark:text-green-400">
-                        <i class="fas fa-chart-pie text-3xl transition-transform group-hover:scale-110"></i>
+
+                    <!-- Skill Card 7 -->
+                    <div class="card p-6 rounded-xl text-center hover:scale-[1.03] transition-all duration-300 hover:shadow-lg hover:shadow-yellow-400/10 hover:border hover:border-yellow-400/20">
+                        <div class="w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center text-purple-400">
+                        <i class="fas fa-chart-bar text-3xl"></i>
+                        </div>
+                        <h3 class="font-bold mb-2">Data Analysis</h3>
+                        <p class="text-sm text-gray-300">Pandas, NumPy, SQL</p>
                     </div>
-                    <h3 class="font-bold mb-2">Data Visualization</h3>
-                    <p class="text-sm text-gray-600 dark:text-gray-300">Matplotlib, Seaborn, Power BI</p>
-                </div>
-                <!-- Event Skills -->
-                <div class="card p-6 rounded-xl text-center hover:scale-[1.03] transition-all duration-300 hover:shadow-lg hover:shadow-yellow-400/10 hover:border hover:border-yellow-400/20">
-                    <div class="w-16 h-16 mx-auto mb-4 bg-yellow-100 bg-zinc-900 rounded-full flex items-center justify-center text-yellow-500 dark:text-yellow-400">
-                        <i class="fas fa-users text-3xl transition-transform group-hover:scale-110"></i>
+
+                    <!-- Skill Card 8 -->
+                    <div class="card p-6 rounded-xl text-center hover:scale-[1.03] transition-all duration-300 hover:shadow-lg hover:shadow-yellow-400/10 hover:border hover:border-yellow-400/20">
+                        <div class="w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center text-green-400">
+                        <i class="fas fa-chart-pie text-3xl"></i>
+                        </div>
+                        <h3 class="font-bold mb-2">Visualization</h3>
+                        <p class="text-sm text-gray-300">Matplotlib, Power BI</p>
                     </div>
-                    <h3 class="font-bold mb-2">Event Planning</h3>
-                    <p class="text-sm text-gray-600 dark:text-gray-300">Community building & event coordination</p>
-                </div>
-                <div class="card p-6 rounded-xl text-center hover:scale-[1.03] transition-all duration-300 hover:shadow-lg hover:shadow-yellow-400/10 hover:border hover:border-yellow-400/20">
-                    <div class="w-16 h-16 mx-auto mb-4 bg-red-100 bg-zinc-900 rounded-full flex items-center justify-center text-red-500 dark:text-red-400">
-                        <i class="fas fa-bullhorn text-3xl transition-transform group-hover:scale-110"></i>
+
+                    <!-- Skill Card 9 -->
+                    <div class="card p-6 rounded-xl text-center hover:scale-[1.03] transition-all duration-300 hover:shadow-lg hover:shadow-yellow-400/10 hover:border hover:border-yellow-400/20">
+                        <div class="w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center text-yellow-400">
+                        <i class="fas fa-users text-3xl"></i>
+                        </div>
+                        <h3 class="font-bold mb-2">Event Planning</h3>
+                        <p class="text-sm text-gray-300">Teamwork & Coordination</p>
                     </div>
-                    <h3 class="font-bold mb-2">Public Speaking</h3>
-                    <p class="text-sm text-gray-600 dark:text-gray-300">Presenting technical concepts clearly</p>
+
+                    <!-- Skill Card 10 -->
+                    <div class="card p-6 rounded-xl text-center hover:scale-[1.03] transition-all duration-300 hover:shadow-lg hover:shadow-yellow-400/10 hover:border hover:border-yellow-400/20">
+                        <div class="w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center text-red-400">
+                        <i class="fas fa-bullhorn text-3xl"></i>
+                        </div>
+                        <h3 class="font-bold mb-2">Public Speaking</h3>
+                        <p class="text-sm text-gray-300">Technical communication</p>
+                    </div>
                 </div>
             </div>
+        </div>
+
             <!-- Technical Tools -->
             <div class="mt-16">
                 <h3 class="text-2xl font-bold mb-8 text-center">Technical Toolbox</h3>

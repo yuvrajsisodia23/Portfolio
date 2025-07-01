@@ -2,55 +2,55 @@
 <html lang="en" class="dark">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <link rel="icon" type="image/png" href="Assets/favicon.png" />
-  <title>Yuvraj Singh Sisodia's Portfolio</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-  <link rel="stylesheet" href="css/styles.css" />
-  <script src="js/script.js" defer></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" type="image/png" href="Assets/favicon.png" />
+    <title>Yuvraj Singh Sisodia's Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/script.js" defer></script>
 </head>
 
 <body class="bg-zinc-950 text-white">
-  <nav class="fixed w-full z-50 backdrop-blur-md bg-opacity-80 bg-zinc-950">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-16">
-                <div class="flex items-center">
-                <a href="index.html#home">
-                    <img src="Assets/signature-logo.png" alt="Home" class="h-20 w-auto" />
-                </a>
-                </div>
-                <div class="hidden md:flex items-center space-x-8">
-                <a href="index.html#skills" class="text-sm font-medium hover:text-yellow-400 transition relative group">Skills<span class="absolute bottom-0 left-0 w-0 h-0.5 bg-yellow-400 transition-all duration-300 group-hover:w-full"></span></a>
-                <a href="index.html#projects" class="text-sm font-medium hover:text-yellow-400 transition relative group">Projects<span class="absolute bottom-0 left-0 w-0 h-0.5 bg-yellow-400 transition-all duration-300 group-hover:w-full"></span></a>
-                <a href="events.html" class="text-sm font-medium hover:text-yellow-400 transition relative group">Events<span class="absolute bottom-0 left-0 w-0 h-0.5 bg-yellow-400 transition-all duration-300 group-hover:w-full"></span></a>
-                <a href="index.html#blog" class="text-sm font-medium hover:text-yellow-400 transition relative group">Blog<span class="absolute bottom-0 left-0 w-0 h-0.5 bg-yellow-400 transition-all duration-300 group-hover:w-full"></span></a>
-                <a href="index.html#contact" class="text-sm font-medium hover:text-yellow-400 transition relative group">Contact<span class="absolute bottom-0 left-0 w-0 h-0.5 bg-yellow-400 transition-all duration-300 group-hover:w-full"></span></a>
-                </div>
-                <div class="md:hidden flex items-center">
-                <button id="mobile-menu-button" class="p-2">
-                    <i class="fas fa-bars"></i>
-                </button>
+    <nav class="fixed w-full z-50 backdrop-blur-md bg-opacity-80 bg-zinc-950">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between h-16">
+                    <div class="flex items-center">
+                        <a href="index.html#home">
+                            <img src="Assets/signature-logo.png" alt="Home" class="h-20 w-auto" />
+                        </a>
+                    </div>
+                    <div class="hidden md:flex items-center space-x-8">
+                        <a href="index.html#skills" class="text-sm font-medium hover:text-yellow-400 transition relative group">Skills<span class="absolute bottom-0 left-0 w-0 h-0.5 bg-yellow-400 transition-all duration-300 group-hover:w-full"></span></a>
+                        <a href="index.html#projects" class="text-sm font-medium hover:text-yellow-400 transition relative group">Projects<span class="absolute bottom-0 left-0 w-0 h-0.5 bg-yellow-400 transition-all duration-300 group-hover:w-full"></span></a>
+                        <a href="events.html" class="text-sm font-medium hover:text-yellow-400 transition relative group">Events<span class="absolute bottom-0 left-0 w-0 h-0.5 bg-yellow-400 transition-all duration-300 group-hover:w-full"></span></a>
+                        <a href="index.html#blog" class="text-sm font-medium hover:text-yellow-400 transition relative group">Blog<span class="absolute bottom-0 left-0 w-0 h-0.5 bg-yellow-400 transition-all duration-300 group-hover:w-full"></span></a>
+                        <a href="index.html#contact" class="text-sm font-medium hover:text-yellow-400 transition relative group">Contact<span class="absolute bottom-0 left-0 w-0 h-0.5 bg-yellow-400 transition-all duration-300 group-hover:w-full"></span></a>
+                    </div>
+                    <div class="md:hidden flex items-center">
+                        <button id="mobile-menu-button" class="p-2">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                    </div>
                 </div>
             </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-zinc-950">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="index.html#skills" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-100/10 dark:hover:bg-zinc-700">Skills</a>
+                <a href="index.html#projects" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-100/10 dark:hover:bg-zinc-700">Projects</a>
+                <a href="events.html" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-100/10 dark:hover:bg-zinc-700">Events</a>
+                <a href="index.html#blog" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-100/10 dark:hover:bg-zinc-700">Blog</a>
+                <a href="index.html#contact" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-100/10 dark:hover:bg-zinc-700">Contact</a>
+            </div>
         </div>
-    <div id="mobile-menu" class="hidden md:hidden bg-zinc-950">
-        <div class="px-2 pt-2 pb-3 space-y-1">
-            <a href="index.html#skills" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-100/10 dark:hover:bg-zinc-700">Skills</a>
-            <a href="index.html#projects" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-100/10 dark:hover:bg-zinc-700">Projects</a>
-            <a href="events.html" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-100/10 dark:hover:bg-zinc-700">Events</a>
-            <a href="index.html#blog" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-100/10 dark:hover:bg-zinc-700">Blog</a>
-            <a href="index.html#contact" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-100/10 dark:hover:bg-zinc-700">Contact</a>
-        </div>
-    </div>
-  </nav>
+    </nav>
 
     <main class="pt-28 px-4 sm:px-6 lg:px-8">
         <div class="max-w-4xl mx-auto text-center">
-        <h2 class="text-4xl font-bold mb-4">Events I've <span class="text-yellow-400">Curated</span></h2>
-        <p class="text-gray-400 max-w-2xl mx-auto mb-16">Curating events has always been my way of shaping narratives that matter. I've loved crafting themes, bringing speakers and participants together, and creating experiences that spark ideas and leave lasting impact.</p>
+            <h2 class="text-4xl font-bold mb-4">Events I've <span class="text-yellow-400">Curated</span></h2>
+            <p class="text-gray-400 max-w-2xl mx-auto mb-16">Curating events has always been my way of shaping narratives that matter. I've loved crafting themes, bringing speakers and participants together, and creating experiences that spark ideas and leave lasting impact.</p>
         </div>
 
         <div class="timeline-container relative max-w-6xl mx-auto pb-32">
@@ -60,16 +60,16 @@
             <div class="timeline-item left relative">
                 <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-yellow-400 w-4 h-4 rounded-full z-20"></div>
                 <div class="timeline-card animate-fade-in">
-                <img src="Assets\Yuvi-graphic.jpg" alt="Graphic" class="rounded-md mb-4">
-                <h3 class="font-bold text-xl mb-1">Cooking.....</h3>
-                <p class="text-sm text-gray-500 mb-2"></p>
-                <p class="text-gray-400 mb-3">...</p>
-                <div class="flex flex-wrap gap-2 mb-3">
-                    <span class="px-2 py-1 bg-zinc-700 rounded-full text-xs"></span>
-                    <span class="px-2 py-1 bg-zinc-700 rounded-full text-xs"></span>
-                    <span class="px-2 py-1 bg-zinc-700 rounded-full text-xs"></span>
-                </div>
-                <a href="events.html" class="text-blue-400 font-medium inline-flex items-center hover:underline">Know More <i class="fas fa-arrow-right ml-2"></i></a>
+                    <img src="Assets\Yuvi-graphic.jpg" alt="Graphic" class="rounded-md mb-4">
+                    <h3 class="font-bold text-xl mb-1">Cooking.....</h3>
+                    <p class="text-sm text-gray-500 mb-2"></p>
+                    <p class="text-gray-400 mb-3">...</p>
+                    <div class="flex flex-wrap gap-2 mb-3">
+                        <span class="px-2 py-1 bg-zinc-700 rounded-full text-xs"></span>
+                        <span class="px-2 py-1 bg-zinc-700 rounded-full text-xs"></span>
+                        <span class="px-2 py-1 bg-zinc-700 rounded-full text-xs"></span>
+                    </div>
+                    <a href="events.html" class="text-blue-400 font-medium inline-flex items-center hover:underline">Know More <i class="fas fa-arrow-right ml-2"></i></a>
                 </div>
             </div>
 
@@ -77,49 +77,49 @@
             <div class="timeline-item right relative">
                 <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-yellow-400 w-4 h-4 rounded-full z-20"></div>
                 <div class="timeline-card animate-fade-in">
-                <img src="https://media.licdn.com/dms/image/v2/D4D22AQEraZdYJGlVrQ/feedshare-shrink_2048_1536/B4DZWP8KF6HkAo-/0/1741876682217?e=1753920000&v=beta&t=et5DXG8NjIYYpQtMG2Cz3qExWboyQdPfJDV36e10CXY" class="rounded-md mb-4">
-                <h3 class="font-bold text-xl mb-1">TEDxIPSA Indore 2025</h3>
-                <p class="text-sm text-gray-500 mb-2">March 2025</p>
-                <p class="text-gray-400 mb-3">As Curation Head for TEDxIPSA Indore 2025, I led the speaker selection and ideation process, managed speaker communication, content review, and rehearsals.</p>
-                <div class="flex flex-wrap gap-2 mb-3">
-                    <span class="px-2 py-1 bg-zinc-700 rounded-full text-xs">Leadership</span>
-                    <span class="px-2 py-1 bg-zinc-700 rounded-full text-xs">Curation</span>
-                    <span class="px-2 py-1 bg-zinc-700 rounded-full text-xs">Management</span>
-                </div>
-                <a href="https://www.linkedin.com/posts/yuvraj-singh-sisodia_wrapped-uptedxipsa-indore-andheadingthe-activity-7305960428365344768-xBm4" class="text-blue-400 font-medium inline-flex items-center hover:underline">Know More <i class="fas fa-arrow-right ml-2"></i></a>
+                    <img src="https://media.licdn.com/dms/image/v2/D4D22AQEraZdYJGlVrQ/feedshare-shrink_2048_1536/B4DZWP8KF6HkAo-/0/1741876682217?e=1753920000&v=beta&t=et5DXG8NjIYYpQtMG2Cz3qExWboyQdPfJDV36e10CXY" class="rounded-md mb-4">
+                    <h3 class="font-bold text-xl mb-1">TEDxIPSA Indore 2025</h3>
+                    <p class="text-sm text-gray-500 mb-2">March 2025</p>
+                    <p class="text-gray-400 mb-3">As Curation Head for TEDxIPSA Indore 2025, I led the speaker selection and ideation process, managed speaker communication, content review, and rehearsals.</p>
+                    <div class="flex flex-wrap gap-2 mb-3">
+                        <span class="px-2 py-1 bg-zinc-700 rounded-full text-xs">Leadership</span>
+                        <span class="px-2 py-1 bg-zinc-700 rounded-full text-xs">Curation</span>
+                        <span class="px-2 py-1 bg-zinc-700 rounded-full text-xs">Management</span>
+                    </div>
+                    <a href="https://www.linkedin.com/posts/yuvraj-singh-sisodia_wrapped-uptedxipsa-indore-andheadingthe-activity-7305960428365344768-xBm4" class="text-blue-400 font-medium inline-flex items-center hover:underline">Know More <i class="fas fa-arrow-right ml-2"></i></a>
                 </div>
             </div>
 
             <!-- Event 2 (Left) -->
             <div class="timeline-item left relative">
-            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-yellow-400 w-4 h-4 rounded-full z-20"></div>
-            <div class="timeline-card animate-fade-in">
-                <img src="https://media.licdn.com/dms/image/v2/D4D22AQF2fCh0f9biQA/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1721507355908?e=1754524800&v=beta&t=Bu09ujWzZwrA8m6j6YUdWku9F2p9BydF88Jqx0HJlk0" class="rounded-md mb-4">
-                <h3 class="font-bold text-xl mb-1">Hackathon IPSA 2023</h3>
-                <p class="text-sm text-gray-500 mb-2">August 2024</p>
-                <p class="text-gray-400 mb-3">Curated and organized IPSA’s first ever hackathon. Managed speaker communication, documentation and helped design a collaborative 8-hour experience.</p>
-                <div class="flex flex-wrap gap-2 mb-3">
-                <span class="px-2 py-1 bg-zinc-700 rounded-full text-xs">Hackathon</span>
-                <span class="px-2 py-1 bg-zinc-700 rounded-full text-xs">Documentation</span>
-                <span class="px-2 py-1 bg-zinc-700 rounded-full text-xs">Execution</span>
+                <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-yellow-400 w-4 h-4 rounded-full z-20"></div>
+                <div class="timeline-card animate-fade-in">
+                    <img src="https://media.licdn.com/dms/image/v2/D4D22AQF2fCh0f9biQA/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1721507355908?e=1754524800&v=beta&t=Bu09ujWzZwrA8m6j6YUdWku9F2p9BydF88Jqx0HJlk0" class="rounded-md mb-4">
+                    <h3 class="font-bold text-xl mb-1">Hackathon IPSA 2023</h3>
+                    <p class="text-sm text-gray-500 mb-2">August 2024</p>
+                    <p class="text-gray-400 mb-3">Curated and organized IPSA’s first ever hackathon. Managed speaker communication, documentation and helped design a collaborative 8-hour experience.</p>
+                    <div class="flex flex-wrap gap-2 mb-3">
+                        <span class="px-2 py-1 bg-zinc-700 rounded-full text-xs">Hackathon</span>
+                        <span class="px-2 py-1 bg-zinc-700 rounded-full text-xs">Documentation</span>
+                        <span class="px-2 py-1 bg-zinc-700 rounded-full text-xs">Execution</span>
+                    </div>
+                    <a href="https://www.linkedin.com/posts/yuvraj-singh-sisodia_hackatuassasnatk-hackathon-activity-7171794201255239680-BRj1?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEauVW8B1l9eU6gWB9UQMf9xD-cWIPE-RoY" class="text-blue-400 font-medium inline-flex items-center hover:underline">Know More <i class="fas fa-arrow-right ml-2"></i></a>
                 </div>
-                <a href="https://www.linkedin.com/posts/yuvraj-singh-sisodia_hackatuassasnatk-hackathon-activity-7171794201255239680-BRj1?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEauVW8B1l9eU6gWB9UQMf9xD-cWIPE-RoY" class="text-blue-400 font-medium inline-flex items-center hover:underline">Know More <i class="fas fa-arrow-right ml-2"></i></a>
-            </div>
             </div>
 
             <!-- Event 1 (Right) -->
             <div class="timeline-item right relative">
                 <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-yellow-400 w-4 h-4 rounded-full z-20"></div>
                 <div class="timeline-card animate-fade-in">
-                <img src="https://media.licdn.com/dms/image/v2/D4D22AQEzy63sNlz79A/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1709560076502?e=1753920000&v=beta&t=t5BXUVCiG_j6ygxPSfmhASwc36IiMrLqhScg_6dVyq4" class="rounded-md mb-4">
-                <h3 class="font-bold text-xl mb-1">TEDxIPSA Indore 2024</h3>
-                <p class="text-sm text-gray-500 mb-2">March 2024</p>
-                <p class="text-gray-400 mb-3">Organized my college's first-ever TEDx event. Collaborated with multiple teams to ensure smooth execution, the TEDx event was a huge success and left our college community with unforgettable memories.</p>
-                <div class="flex flex-wrap gap-2 mb-3">
-                    <span class="px-2 py-1 bg-zinc-700 rounded-full text-xs">Curation</span>
-                    <span class="px-2 py-1 bg-zinc-700 rounded-full text-xs">Team Building</span>
-                    <span class="px-2 py-1 bg-zinc-700 rounded-full text-xs">Marketing</span>
-                </div>
+                    <img src="https://media.licdn.com/dms/image/v2/D4D22AQEzy63sNlz79A/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1709560076502?e=1753920000&v=beta&t=t5BXUVCiG_j6ygxPSfmhASwc36IiMrLqhScg_6dVyq4" class="rounded-md mb-4">
+                    <h3 class="font-bold text-xl mb-1">TEDxIPSA Indore 2024</h3>
+                    <p class="text-sm text-gray-500 mb-2">March 2024</p>
+                    <p class="text-gray-400 mb-3">Organized my college's first-ever TEDx event. Collaborated with multiple teams to ensure smooth execution, the TEDx event was a huge success and left our college community with unforgettable memories.</p>
+                    <div class="flex flex-wrap gap-2 mb-3">
+                        <span class="px-2 py-1 bg-zinc-700 rounded-full text-xs">Curation</span>
+                        <span class="px-2 py-1 bg-zinc-700 rounded-full text-xs">Team Building</span>
+                        <span class="px-2 py-1 bg-zinc-700 rounded-full text-xs">Marketing</span>
+                    </div>
                 <a href="https://www.linkedin.com/posts/yuvraj-singh-sisodia_tedx-tedxipsaindore-teamwork-activity-7170414765280903168-QwdP" class="text-blue-400 font-medium inline-flex items-center hover:underline">Know More <i class="fas fa-arrow-right ml-2"></i></a>
                 </div>
             </div>
