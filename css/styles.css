@@ -148,11 +148,12 @@ body.fade-out {
 }
 
 .animate-scroll {
-animation: scrollX 20s linear infinite;
+animation: scrollX 15s linear infinite;
 }
 .animate-scroll:hover {
 animation-play-state: paused;
 }
+
 @keyframes scrollX {
 0% {
     transform: translateX(0);
@@ -167,4 +168,17 @@ display: none;
 .scrollbar-hide {
 -ms-overflow-style: none;
 scrollbar-width: none;
+}
+
+#loader {
+  transition: opacity 0.5s ease;
+}
+#loader.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+body.fade-out {
+  opacity: 0;
+  transition: opacity 300ms ease-in;
 }

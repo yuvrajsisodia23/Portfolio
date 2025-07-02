@@ -62,3 +62,54 @@ document.querySelectorAll('a[href]').forEach(link => {
 window.addEventListener('DOMContentLoaded', () => {
     document.body.classList.add('fade-in');
 });
+
+//screen loader
+document.addEventListener("DOMContentLoaded", () => {
+const loader = document.getElementById("loader");
+const percentage = document.getElementById("loading-percentage");
+const mainContent = document.getElementById("main-content");
+
+// Check if loader has already been shown globally
+const hasLoaded = localStorage.getItem("hasLoadedOnce");
+
+if (!hasLoaded) {
+    let count = 0;
+    const speed = 7;
+
+    const interval = setInterval(() => {
+    if (count >= 100) {
+        clearInterval(interval);
+        loader.classList.add("hidden");
+        mainContent.classList.remove("opacity-0");
+        localStorage.setItem("hasLoadedOnce", "true"); // Mark loader as shown
+    } else {
+        count++;
+        percentage.textContent = `${count}%`;
+    }
+    }, speed);
+} else {
+    // Skip loader entirely
+    loader.classList.add("hidden");
+    mainContent.classList.remove("opacity-0");
+}
+});
+
+//animations
+document.querySelectorAll("a[href]").forEach(link => {
+  link.addEventListener("click", e => {
+    if (!link.classList.contains("no-transition")) {
+      e.preventDefault();
+      document.body.classList.add("fade-out");
+      setTimeout(() => window.location = link.href, 300);
+    }
+  });
+});
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("animate-fade-up");
+    }
+  });
+});
+document.querySelectorAll(".animate-on-scroll").forEach(el => observer.observe(el));
